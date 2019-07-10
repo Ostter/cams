@@ -1,0 +1,23 @@
+/* Be mindful of file paths. You may want to construct your own fonts.css file. */
+
+/* Icon font */
+@font-face {
+  font-family: FuturaPTBookMain;
+  src: url("./FuturaPTBook.woff") format("woff");
+  src: url("./FuturaPTBook.eot") format("embedded-opentype");
+  src: url("./FuturaPTBook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("./icomoon.eot?t9hdqe");
+  src: url("./icomoon.eot?t9hdqe#iefix") format("embedded-opentype"),
+    url("./icomoon.ttf?t9hdqe") format("truetype"),
+    url("./icomoon.woff?t9hdqe") format("woff"),
+    url("./icomoon.svg?t9hdqe#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

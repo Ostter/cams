@@ -1,0 +1,35 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.row,
+.header {
+  flex-shrink: 0;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-bottom: 1px solid #bec1d0;
+}
+.row {
+}
+.header {
+  font-weight: bold;
+}
+
+.defaultDimensions > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.grid > .rowWithCheckbox.rowChecked {
+  background-color: rgba(0, 174, 239, 0.1);
+}
+
+.checkbox {
+  flex-basis: 50px;
+}

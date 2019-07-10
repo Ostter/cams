@@ -1,0 +1,93 @@
+[class^="icon-"],
+[class*=" icon-"],
+.icomoon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-combined-shape:before {
+  content: "\e900";
+}
+.icon-icon-calend:before {
+  content: "\e901";
+}
+.icon-icon-call:before {
+  content: "\e902";
+}
+.icon-icon-lock:before {
+  content: "\e903";
+}
+.icon-icon-plus-l:before {
+  content: "\e906";
+}
+.icon-icon-plus:before {
+  content: "\e907";
+}
+.icon-icon-geo:before {
+  content: "\e908";
+}
+.icon-icon-fire:before {
+  content: "\e90b";
+}
+.icon-icon-pencil:before {
+  content: "\e90c";
+}
+.icon-icon-eye:before {
+  content: "\e90d";
+}
+.icon-icon-add:before {
+  content: "\e90e";
+}
+.icon-icon-camera:before {
+  content: "\e90f";
+}
+.icon-icon-camera-download-copy3x:before {
+  content: "\e910";
+}
+.icon-icon-photo:before {
+  content: "\e911";
+}
+.icon-icon-layout:before {
+  content: "\e912";
+}
+.icon-icon-trash:before {
+  content: "\e913";
+}
+.icon-icon-close:before {
+  content: "\e914";
+}
+.icon-icon-question:before {
+  content: "\e915";
+}
+.icon-arrow-up:before {
+  content: "\e904";
+}
+.icon-arrow-down:before {
+  content: "\e905";
+}
+.icon-checkmark:before {
+  content: "\e909";
+}
+.icon-radio-unchecked-1:before {
+  content: "\e90a";
+}
+.icon-switch:before {
+  content: "\e916";
+}
+.icon-shift-down:before {
+  content: "\e917";
+}
+
+.icon-filter-1:before {
+  content: "\e919";
+}
