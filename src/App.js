@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import List from "./CamList/List";
+import List from "./Views/CamList/List";
 
 function App() {
   return (

@@ -4,15 +4,15 @@ import {
   SmartGrid,
   FlexRow as Row,
   FlexHeader as Header
-} from "../Components/Grid";
+} from "../../Components/Grid";
 import styles from "./List.module.css";
-import typography from "../Styleguide/typography.module.css";
+import typography from "../../Styleguide/typography.module.css";
 
-import Icon from "../Components/Icon";
+import Icon from "../../Components/Icon";
 
 import cams from "./mockData";
 
-import "../Styleguide/fonts/fonts.css";
+import "../../Styleguide/fonts/fonts.css";
 
 class Item extends PureComponent {
   render() {
@@ -39,7 +39,11 @@ class Item extends PureComponent {
           <Icon
             name="switch"
             size={16}
-            className={classnames(styles.icon, styles.marginRightIcon, styleColor)}
+            className={classnames(
+              styles.icon,
+              styles.marginRightIcon,
+              styleColor
+            )}
           />
           {Math.floor(Math.random() * 2) === 0 ? "Активна" : "Отключена"}
         </span>
@@ -47,7 +51,11 @@ class Item extends PureComponent {
           <Icon
             name="switch"
             size={16}
-            className={classnames(styles.icon, styles.marginRightIcon, styleColor)}
+            className={classnames(
+              styles.icon,
+              styles.marginRightIcon,
+              styleColor
+            )}
           />
           {fraction[Math.floor(Math.random() * fraction.length)]}
         </span>
@@ -55,7 +63,11 @@ class Item extends PureComponent {
           <Icon
             name="switch"
             size={16}
-            className={classnames(styles.icon, styles.marginRightIcon, styleColor)}
+            className={classnames(
+              styles.icon,
+              styles.marginRightIcon,
+              styleColor
+            )}
           />
           {fraction[Math.floor(Math.random() * fraction.length)]}
         </span>
@@ -100,27 +112,37 @@ export default class CamList extends PureComponent {
         <SmartGrid>
           <Header checkbox={true}>
             <div className={styles.columnName}>
-                Camera
-                <Icon
-                  name="arrow-up"
-                  size={16}
-                  className={classnames(styles.icon, styles.iconBlue2, styles.marginLeftIcon)}
-                />
+              Camera
+              <Icon
+                name="arrow-up"
+                size={16}
+                className={classnames(
+                  styles.icon,
+                  styles.iconBlue2,
+                  styles.marginLeftIcon
+                )}
+              />
             </div>
             <div className={styles.columnName}>
-                Vendor / Model
-                <Icon
-                  name="shift-down"
-                  size={20}
-                  className={classnames(styles.icon, styles.iconBlue, styles.marginLeftIcon)}
-                />
-                <Icon
-                  name="filter-1"
-                  size={16}
-                  className={classnames(styles.icon, styles.iconBlue, styles.marginLeftIcon)}
-                />
-
-
+              Vendor / Model
+              <Icon
+                name="shift-down"
+                size={20}
+                className={classnames(
+                  styles.icon,
+                  styles.iconBlue,
+                  styles.marginLeftIcon
+                )}
+              />
+              <Icon
+                name="filter-1"
+                size={16}
+                className={classnames(
+                  styles.icon,
+                  styles.iconBlue,
+                  styles.marginLeftIcon
+                )}
+              />
             </div>
             <div className={styles.columnName}>Availability</div>
             <div className={styles.columnName}>Detectors</div>
@@ -138,5 +160,3 @@ export default class CamList extends PureComponent {
     );
   }
 }
-
-

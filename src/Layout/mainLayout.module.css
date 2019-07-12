@@ -1,0 +1,57 @@
+/* HELPERS */
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.grow {
+  flex-grow: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+/* LAYOUT COMMON */
+
+.mainRow {
+  composes: horizontal;
+  height: 100%;
+  width: 1400px;
+
+  border-style: solid;
+  border-radius: 5px;
+
+  background-color: #021c45;
+  /*flex-grow: 1;*/
+  /*flex-shrink: 1;*/
+}
+
+.leftColumn {
+  /* Left columns are fixed-width */
+  flex-basis: 168px;
+  flex-shrink: 0;
+  border-top: 1px solid #0f122b;
+}
+
+.grow {
+  flex-grow: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-color: #eee;
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  padding: 16px;
+
+  composes: vertical;
+}

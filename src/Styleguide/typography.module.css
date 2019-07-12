@@ -4,7 +4,6 @@
 /*as example*/
 /*import "../Styleguide/fonts/fonts.css";*/
 
-
 /*COMMON CLASSES*/
 /*FONT-SIZE*/
 .fs10 {
@@ -140,4 +139,3 @@
   composes: fs14 lh18 futuraPTBook;
   color: clBlack70;
 }
-
