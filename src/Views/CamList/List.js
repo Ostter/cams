@@ -6,7 +6,6 @@ import {
   FlexHeader as Header
 } from "../../Components/Grid";
 import styles from "./List.module.css";
-import typography from "../../Styleguide/typography.module.css";
 
 import Icon from "../../Components/Icon";
 
@@ -27,8 +26,8 @@ class Item extends PureComponent {
         <div className={styles.columnValue}>
           <div className={styles.image} />
           <div className={styles.row}>
-            <span>{code}</span>
-            <span>192.165.1.1</span>
+            <span className={styles.camText}>{code}</span>
+            <span className={styles.camIP}>192.165.1.1</span>
           </div>
         </div>
         <div className={classnames(styles.columnValue, styles.row)}>
@@ -108,7 +107,7 @@ export default class CamList extends PureComponent {
     const { cams } = this.state;
 
     return (
-      <div className={classnames(styles.container, typography.futuraPTBook)}>
+      <div className={styles.container}>
         <SmartGrid>
           <Header checkbox={true}>
             <div className={styles.columnName}>

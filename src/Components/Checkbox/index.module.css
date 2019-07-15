@@ -26,12 +26,12 @@
 
 .checkbox {
   position: relative;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #aeb7c5;
-  border-radius: 17px;
-  box-sizing: content-box;
-  float: left;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #d6dce7;
+  border-radius: 24px;
+  /* box-sizing: content-box; */
+  /* float: left; */
 }
 
 .checkbox svg {

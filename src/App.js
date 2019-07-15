@@ -1,11 +1,15 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+
 import "./App.css";
-import List from "./Views/CamList/List";
+import MainLayout from "./Layout/MainLayout";
 
 function App() {
   return (
     <div className="wrapper">
-      <List />
+      <BrowserRouter>
+        <MainLayout />
+      </BrowserRouter>
     </div>
   );
 }
