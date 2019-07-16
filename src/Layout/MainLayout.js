@@ -11,7 +11,20 @@ import classnames from "classnames";
 
 class MainLayout extends PureComponent {
   render() {
-    const EmptyComponent = () => <div>I'm empty component!</div>;
+    //TODO temporary
+    const EmptyComponent = () => (
+      <div
+        style={{
+          textAlign: "center",
+          color: "aliceblue",
+          fontSize: "100px",
+          position: "relative",
+          top: "50%"
+        }}
+      >
+        I'm empty component!
+      </div>
+    );
     return (
       <Fragment>
         {/* Main layout container */}
@@ -29,24 +42,20 @@ class MainLayout extends PureComponent {
             <LeftSidebar />
           </aside>
 
-          <div className={layoutStyle.grow}>
-            <main className={layoutStyle.container}>
-              <Switch>
-                <Route path="/admin/cams" component={CamsLayout} />
-                <Route path="/admin/users" exact component={EmptyComponent} />
-                <Route
-                  path="/admin/services"
-                  exact
-                  component={EmptyComponent}
-                />
-                <Route path="/admin/settings" component={EmptyComponent} />
-                <Route path="/admin/schemes" component={EmptyComponent} />
-                <Route path="/admin/integration" component={EmptyComponent} />
-                <Route path="/admin/log" component={EmptyComponent} />
-                <Redirect to="/admin/cams" />
-              </Switch>
-            </main>
-          </div>
+          {/*<div className={layoutStyle.grow}>*/}
+          <main className={layoutStyle.container}>
+            <Switch>
+              <Route path="/admin/cams" component={CamsLayout} />
+              <Route path="/admin/users" exact component={EmptyComponent} />
+              <Route path="/admin/services" exact component={EmptyComponent} />
+              <Route path="/admin/settings" component={EmptyComponent} />
+              <Route path="/admin/schemes" component={EmptyComponent} />
+              <Route path="/admin/integration" component={EmptyComponent} />
+              <Route path="/admin/log" component={EmptyComponent} />
+              <Redirect to="/admin/cams" />
+            </Switch>
+          </main>
+          {/*</div>*/}
         </div>
       </Fragment>
     );

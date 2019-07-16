@@ -4,7 +4,20 @@ import Panel from "../../Components/Panel";
 import { PageHeaderTabs, Tab } from "../../Components/Header/PageHeaderTabs";
 import List from "../CamList/List";
 
-const EmptyComponent = () => <div>I'm empty component!</div>;
+//TODO temporary
+const EmptyComponent = () => (
+  <div
+    style={{
+      textAlign: "center",
+      color: "aliceblue",
+      fontSize: "100px",
+      position: "relative",
+      top: "50%"
+    }}
+  >
+    I'm empty component!
+  </div>
+);
 
 const AuthenticationLayout = ({ match }) => {
   return (

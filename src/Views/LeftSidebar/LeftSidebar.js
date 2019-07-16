@@ -7,38 +7,66 @@ import styles from "./index.module.css";
 const LeftSidebar = () => {
   return (
     <nav className={styles.menu}>
-      <div className={classnames(styles.button, styles.text)}>
-        <NavLink activeClassName={styles.active} to={`/admin/cams`}>
+      <div className={styles.button}>
+        <NavLink
+          activeClassName={styles.active}
+          className={styles.text}
+          to={`/admin/cams`}
+        >
           Cams
         </NavLink>
       </div>
-      <div className={classnames(styles.button, styles.text)}>
-        <NavLink activeClassName={styles.active} to={`/admin/users`}>
+      <div className={styles.button}>
+        <NavLink
+          activeClassName={styles.active}
+          className={styles.text}
+          to={`/admin/users`}
+        >
           Users
         </NavLink>
       </div>
-      <div className={classnames(styles.button, styles.text)}>
-        <NavLink activeClassName={styles.active} to={`/admin/services`}>
+      <div className={styles.button}>
+        <NavLink
+          activeClassName={styles.active}
+          className={styles.text}
+          to={`/admin/services`}
+        >
           Services
         </NavLink>
       </div>
-      <div className={classnames(styles.button, styles.text)}>
-        <NavLink activeClassName={styles.active} to={`/admin/settings`}>
+      <div className={styles.button}>
+        <NavLink
+          activeClassName={styles.active}
+          className={styles.text}
+          to={`/admin/settings`}
+        >
           Settings
         </NavLink>
       </div>
-      <div className={classnames(styles.button, styles.text)}>
-        <NavLink activeClassName={styles.active} to={`/admin/schemes`}>
+      <div className={styles.button}>
+        <NavLink
+          activeClassName={styles.active}
+          className={styles.text}
+          to={`/admin/schemes`}
+        >
           Schemes
         </NavLink>
       </div>
-      <div className={classnames(styles.button, styles.text)}>
-        <NavLink activeClassName={styles.active} to={`/admin/integration`}>
+      <div className={styles.button}>
+        <NavLink
+          activeClassName={styles.active}
+          className={styles.text}
+          to={`/admin/integration`}
+        >
           Integration
         </NavLink>
       </div>
-      <div className={classnames(styles.button, styles.text)}>
-        <NavLink activeClassName={styles.active} to={`/admin/log`}>
+      <div className={styles.button}>
+        <NavLink
+          activeClassName={styles.active}
+          className={styles.text}
+          to={`/admin/log`}
+        >
           Log
         </NavLink>
       </div>

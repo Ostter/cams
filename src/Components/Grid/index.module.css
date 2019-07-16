@@ -1,23 +1,23 @@
 .grid {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  overflow-y: auto;
+  min-height: min-content;
+  height: 100%;
+}
+
+.header {
+  font-weight: bold;
+  height: 52px;
+}
+
+.row {
+  height: 74px;
 }
 
 .row,
 .header {
   flex-shrink: 0;
-  height: 70px;
   display: flex;
   align-items: center;
-  /*text-align: left;*/
   border-bottom: 1px solid #d6dce7;
-}
-.row {
-}
-.header {
-  font-weight: bold;
 }
 
 .defaultDimensions > * {
