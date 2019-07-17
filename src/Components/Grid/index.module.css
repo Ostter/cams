@@ -20,6 +20,11 @@
   border-bottom: 1px solid #d6dce7;
 }
 
+.row,
+.header:focus {
+  outline: none;
+}
+
 .defaultDimensions > * {
   flex-grow: 1;
   flex-shrink: 1;
@@ -27,7 +32,7 @@
 }
 
 .grid > .rowWithCheckbox.rowChecked {
-  background-color: rgba(0, 174, 239, 0.1);
+  /*background-color: rgba(34, 51, 102, 0.1);*/
 }
 
 .checkbox {

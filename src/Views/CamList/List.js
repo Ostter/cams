@@ -59,9 +59,9 @@ class Item extends PureComponent {
               styles.imageIcon
             )}
           />
-          <span className={styles.vendor}>
-            {Math.floor(Math.random() * 2) === 0 ? "Активна" : "Отключена"}
-          </span>
+          {/*<span className={styles.vendor}>*/}
+          {Math.floor(Math.random() * 2) === 0 ? "Активна" : "Отключена"}
+          {/*</span>*/}
         </span>
         <span className={styles.columnValue}>
           <img
@@ -110,7 +110,8 @@ export default class CamList extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      cams: []
+      cams: [],
+      checked: []
     };
   }
 
@@ -120,13 +121,52 @@ export default class CamList extends PureComponent {
     }
   }
 
+  onCheckbox = id => {
+    if (!this.state.checked[id]) {
+      this.setState({ checked: { ...this.state.checked, [id]: true } });
+    } else {
+      this.setState(
+        { checked: { ...this.state.checked, [id]: !this.state.checked[id] } },
+        this.submit
+      );
+    }
+  };
+
+  countingCheckRows = () => {
+    let amountCheckRows = Object.values(this.state.checked)
+      .filter(value => !!value)
+      .reduce((sum, value) => sum + value, 0);
+    if (amountCheckRows === 0) {
+      return false;
+    } else if (amountCheckRows < cams.length) {
+      return amountCheckRows;
+    } else if (amountCheckRows === cams.length) {
+      return true;
+    }
+  };
+
+  checkAllRows = () => {
+    const flag = this.countingCheckRows() !== true;
+    let checked = [];
+
+    this.state.cams.forEach(({ id }) => {
+      checked[id] = flag;
+    });
+
+    this.setState({ checked });
+  };
+
   render() {
     const { cams } = this.state;
 
     return (
       <div className={styles.container}>
-        <SmartGrid className={styles.smartGrid}>
-          <Header checkbox={true}>
+        <SmartGrid>
+          <Header
+            checkbox={true}
+            checked={this.countingCheckRows()}
+            onChange={this.checkAllRows}
+          >
             <div className={styles.columnName}>
               Camera
               <Icon
@@ -167,7 +207,12 @@ export default class CamList extends PureComponent {
             <div className={styles.columnName}>License</div>
           </Header>
           {cams.map((cam, idx) => (
-            <Row key={idx} checkbox={true}>
+            <Row
+              key={idx}
+              checkbox={true}
+              onChange={() => this.onCheckbox(cam.id)}
+              checked={this.state.checked[cam.id]}
+            >
               <Item key={idx} cam={cam} />
             </Row>
           ))}

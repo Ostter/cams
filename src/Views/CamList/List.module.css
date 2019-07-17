@@ -1,21 +1,53 @@
-.container {
-  background-color: #fff;
-  flex-grow: 1;
-  overflow: auto;
+.camText {
+  font-family: FuturaPTBookMain, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #335588;
+  margin-bottom: 4px;
+  line-height: 18px;
 }
 
-.smartGrid {
-  margin: 24px 40px 0 40px;
+.camIP {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #1d1d1b;
+  line-height: 12px;
+}
+
+.text {
+  line-height: 15px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #1d1d1b;
+}
+
+.container {
+  background-color: #fff;
+  flex: 1;
+  overflow: auto;
+  padding: 24px 40px 72px 40px;
 }
 
 .columnName {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  cursor: pointer;
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*flex-grow: 1;*/
+  /*cursor: pointer;*/
 }
 
 .columnValue {
+  composes: text;
 }
 
 /*
@@ -66,39 +98,6 @@ child's number begin form second position
 .row {
   display: flex;
   flex-direction: column;
-}
-
-.camText {
-  font-size: 18px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  color: #335588;
-  margin-bottom: 4px;
-  line-height: 18px;
-}
-
-.camIP {
-  font-family: "PT Sans", sans-serif;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  color: #1d1d1b;
-  line-height: 12px;
-}
-
-.vendor {
-  line-height: 15px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  color: #1d1d1b;
 }
 
 .marginBottom4 {

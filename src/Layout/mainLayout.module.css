@@ -33,12 +33,6 @@
   background-color: #122244;
 }
 
-/*.grow {*/
-/*  flex-grow: 1;*/
-/*  min-width: 0;*/
-/*  width: 100%;*/
-/*}*/
-
 .container {
   /*height: 100%;*/
   display: flex;

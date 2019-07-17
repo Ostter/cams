@@ -12,7 +12,7 @@ class FlexRow extends PureComponent {
       checkbox,
       tabIndex,
       selected,
-      onCheckbox,
+      onChange,
       checked,
       children,
       _scaleRef,
@@ -29,7 +29,7 @@ class FlexRow extends PureComponent {
         <Fragment>
           {checkbox ? (
             <Fragment>
-              <Checkbox checked={checked} onChange={onCheckbox} />
+              <Checkbox checked={checked} onChange={onChange} />
               {children}
             </Fragment>
           ) : (

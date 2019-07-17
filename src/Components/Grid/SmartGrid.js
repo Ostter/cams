@@ -154,7 +154,7 @@ SmartGrid.propTypes = {
 
   // Optional behavioral
   autoResize: PropTypes.bool, // Avoid scrollbar (set to false to display all given items on one page).
-  checkbox: PropTypes.bool, // Add checkbox to rows, allowing onCheckbox hooks. Also styles for checkboxed rows.
+  checkbox: PropTypes.bool, // Add checkbox to rows, allowing onChange hooks. Also styles for checkboxed rows.
 
   // Optional stylistic
   hover: PropTypes.bool, // Styles for row hover.
