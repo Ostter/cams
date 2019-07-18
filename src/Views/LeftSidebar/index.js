@@ -1,10 +1,9 @@
 import React from "react";
 import { NavLink, withRouter } from "react-router-dom";
-import classnames from "classnames";
 
 import styles from "./index.module.css";
 
-const LeftSidebar = () => {
+const Index = () => {
   return (
     <nav className={styles.menu}>
       <div className={styles.button}>
@@ -74,4 +73,4 @@ const LeftSidebar = () => {
   );
 };
 
-export default withRouter(LeftSidebar);
+export default withRouter(Index);

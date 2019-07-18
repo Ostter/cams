@@ -1,0 +1,127 @@
+.text {
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 13px;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.container {
+  padding: 16px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.columnName {
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*flex-grow: 1;*/
+  /*cursor: pointer;*/
+}
+
+.columnValue {
+  composes: text;
+}
+
+/*
+if the checkbox exists in the rows,
+child's number begin form second position
+ */
+.columnName:nth-child(2),
+.columnValue:nth-child(2) {
+  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.columnName:nth-child(3),
+.columnValue:nth-child(3) {
+  flex-basis: 20%;
+}
+
+.columnName:nth-child(4),
+.columnValue:nth-child(4) {
+  flex-basis: 20%;
+}
+
+.columnName:nth-child(5),
+.columnValue:nth-child(5) {
+  flex-basis: 15%;
+}
+
+.columnName:nth-child(6),
+.columnValue:nth-child(6) {
+  flex-basis: 15%;
+}
+
+.columnName:nth-child(7),
+.columnValue:nth-child(7) {
+  flex-basis: 15%;
+}
+
+.columnName:nth-child(8),
+.columnValue:nth-child(8) {
+  flex-basis: 5%;
+}
+
+.columnValue:nth-last-child(1) {
+  text-align: end;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.marginBottom4 {
+  margin-bottom: 4px;
+}
+
+.iconOrange {
+  color: #dccf24;
+}
+
+.iconRed {
+  color: #d05f78;
+}
+
+.iconGreen {
+  color: #28d02f;
+}
+
+.iconBlue {
+  color: #95afd0;
+}
+
+.iconBlue2 {
+  color: #2a4272;
+}
+
+.icon {
+  position: relative;
+  top: 2px;
+}
+
+.marginLeftIcon {
+  margin-left: 5px;
+}
+.marginRightIcon {
+  margin-right: 8px;
+}
+
+.image {
+  height: 50px;
+  width: 80px;
+  margin-right: 11px;
+  background-color: #adbac3;
+}
+
+.imageIcon {
+  height: 16px;
+  width: 16px;
+}

@@ -3,7 +3,8 @@ import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 
 import layoutStyle from "./mainLayout.module.css";
 
-import LeftSidebar from "../Views/LeftSidebar/LeftSidebar";
+import LeftSidebar from "../Views/LeftSidebar";
+import Version from "../Views/Version";
 import CamsLayout from "../Views/Cams/CamsLayout";
 
 import typography from "../Styleguide/typography.module.css";
@@ -30,8 +31,7 @@ class MainLayout extends PureComponent {
         {/* Main layout container */}
         {/*
          * ------------|------------------------------------
-         * left menu   |
-         *             |     MAIN ZONE
+         * left menu   |    MAIN ZONE
          *             |
          */}
 
@@ -40,9 +40,9 @@ class MainLayout extends PureComponent {
         >
           <aside className={layoutStyle.leftColumn}>
             <LeftSidebar />
+            <Version />
           </aside>
 
-          {/*<div className={layoutStyle.grow}>*/}
           <main className={layoutStyle.container}>
             <Switch>
               <Route path="/admin/cams" component={CamsLayout} />
@@ -55,7 +55,6 @@ class MainLayout extends PureComponent {
               <Redirect to="/admin/cams" />
             </Switch>
           </main>
-          {/*</div>*/}
         </div>
       </Fragment>
     );
